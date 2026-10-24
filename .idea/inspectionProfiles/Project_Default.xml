@@ -1,0 +1,31 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="NonAsciiCharacters" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyArgumentListInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="PyCallingNonCallableInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="PyDictDuplicateKeysInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="PyDunderSlotsInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyInconsistentReturnsInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStatementEffectInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="PyTypeHintsInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnboundLocalVariableInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnusedFunctionInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="PyUnusedImportsInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="PyUnusedLocalVariableInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="PyUnusedParameterInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="SpellCheckingInspection" enabled="true" level="INFORMATION" enabled_by_default="true">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
