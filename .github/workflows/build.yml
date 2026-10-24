@@ -3,6 +3,7 @@ name: Build Android APK
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -34,7 +35,7 @@ jobs:
 
       - name: Build Flet APK
         run: |
-          flet build apk
+          yes | flet build apk --no-interactive
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
