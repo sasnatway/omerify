@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Java
+      - name: Set up Java 17
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
@@ -28,17 +28,24 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
+      - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install flet yt-dlp
 
-      - name: Build Flet APK
+      - name: Create Flet App Bootstrap
         run: |
-          yes | flet build apk --no-interactive
+          flet create temp_app
+          cp main.py temp_app/
+          if [ -f logo.png ]; then cp logo.png temp_app/; fi
+
+      - name: Build APK via Flutter
+        run: |
+          cd temp_app
+          flutter build apk --release
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: omerify-apk
-          path: build/apk/app-release.apk
+          path: temp_app/build/app/outputs/flutter-apk/app-release.apk
